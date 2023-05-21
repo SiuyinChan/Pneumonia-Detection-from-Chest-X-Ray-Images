@@ -4,6 +4,14 @@ This repository contains the code for three machine learning models developed fo
 ## Dataset
 You can download the dataset from [kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/), and place it in the `data` folder.
 
+The number of `Normal` and `Pneumonia` images in the 3 datasets:
+
+| Dataset Type | Normal | Pneumonia |
+|--------------|--------|-----------|
+| Training     | 1341   | 3875      |
+| Validation   | 8      | 8         |
+| Test         | 234    | 390       |
+
 ## Dependencies
 Install the dependencies:
 ```
@@ -11,7 +19,7 @@ pip install -r requirements.txt
 ```
 
 ## Load models
-To load saved models:
+To load saved models from the root of the directory:
 
 • CNN model:
 ```
@@ -22,13 +30,13 @@ cnn_model = keras.models.load_model('./models/cnn')
 • Random Forest model:
 ```
 import joblib
-random_forest_model = joblib.load(model, './models/random_forest.joblib')
+random_forest_model = joblib.load('./models/random_forest.joblib')
 ```
 
 • Gradient Boosting model:
 ```
 import joblib
-gradient_boosting_model = joblib.load(model, './models/gradient_boosting.joblib')
+gradient_boosting_model = joblib.load('./models/gradient_boosting.joblib')
 ```
 
 ## Results
