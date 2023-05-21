@@ -2,12 +2,33 @@
 This repository contains the code for three machine learning models developed for the detection of pneumonia based on x-ray images. The models included are Convolutional Neural Network (CNN), Random Forest, and Gradient Boosting.
 
 ## Dataset
-You can download the dataset from [kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/), and place it at the root of the directory.
+You can download the dataset from [kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/), and place it in the `data` folder.
 
 ## Dependencies
 Install the dependencies:
 ```
 pip install -r requirements.txt
+```
+
+## Load models
+To load saved models:
+
+• CNN model:
+```
+from tensorflow import keras
+cnn_model = keras.models.load_model('./models/cnn')
+```
+
+• Random Forest model:
+```
+import joblib
+random_forest_model = joblib.load(model, './models/random_forest.joblib')
+```
+
+• Gradient Boosting model:
+```
+import joblib
+gradient_boosting_model = joblib.load(model, './models/gradient_boosting.joblib')
 ```
 
 ## Results

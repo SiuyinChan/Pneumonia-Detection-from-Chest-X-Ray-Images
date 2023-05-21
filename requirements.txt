@@ -1,9 +1,11 @@
 ipykernel==6.8.0
 ipython==8.0.1
 ipywidgets==7.6.5
+joblib==1.2.0
 keras==2.12.0
 matplotlib==3.3.4
 numpy==1.22.2
 scikit_learn==1.2.2
 seaborn==0.12.2
+tensorflow==2.12.0
 xgboost==1.7.5
