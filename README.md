@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ```
 
 ## Load models
-To load saved models:
+To load saved models from the root of the directory:
 
 • CNN model:
 ```
@@ -22,13 +22,13 @@ cnn_model = keras.models.load_model('./models/cnn')
 • Random Forest model:
 ```
 import joblib
-random_forest_model = joblib.load(model, './models/random_forest.joblib')
+random_forest_model = joblib.load('./models/random_forest.joblib')
 ```
 
 • Gradient Boosting model:
 ```
 import joblib
-gradient_boosting_model = joblib.load(model, './models/gradient_boosting.joblib')
+gradient_boosting_model = joblib.load('./models/gradient_boosting.joblib')
 ```
 
 ## Results
