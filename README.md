@@ -4,6 +4,14 @@ This repository contains the code for three machine learning models developed fo
 ## Dataset
 You can download the dataset from [kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/), and place it in the `data` folder.
 
+The number of `Normal` and `Pneumonia` images in the 3 datasets:
+
+| Dataset Type | Normal | Pneumonia |
+|--------------|--------|-----------|
+| Training     | 1341   | 3875      |
+| Validation   | 8      | 8         |
+| Test         | 234    | 390       |
+
 ## Dependencies
 Install the dependencies:
 ```
